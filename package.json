@@ -1,0 +1,39 @@
+{
+  "name": "npm-wrapped",
+  "version": "1.0.0",
+  "description": "Your year on npm in one command. Total downloads, top package, weekly growth and the most used version, plus a share card.",
+  "type": "module",
+  "bin": {
+    "npm-wrapped": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "tsc"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "npm",
+    "npm-wrapped",
+    "wrapped",
+    "downloads",
+    "npm-stats",
+    "npm-download-stats",
+    "package-stats",
+    "year-in-review",
+    "cli",
+    "terminal"
+  ],
+  "author": "silentcoding",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  }
+}
